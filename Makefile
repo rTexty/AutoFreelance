@@ -13,7 +13,7 @@ build:
 
 # Запуск (для локальной разработки)
 run:
-	go run cmd/app/main.go
+	CONFIG_PATH=./config/local.yaml go run cmd/app/main.go
 
 # Запуск тестов (с проверкой на гонку потоков - race condition)
 test:
