@@ -1,0 +1,9 @@
+pre-commit:
+  parallel: true # Запускать проверки параллельно для скорости
+  commands:
+    lint:
+      glob: "*.go" # Запускать только если менялись go файлы
+      run: golangci-lint run
+    test:
+      glob: "*.go"
+      run: go test ./...
