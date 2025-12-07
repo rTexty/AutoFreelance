@@ -1,8 +1,9 @@
 run:
-  # Таймаут на линтинг (иногда CI тупит)
   timeout: 5m
-  # Пропускать сгенерированные файлы и вендор
   tests: true
+
+# version of configuration format
+version: 2
 
 linters-settings:
   govet:
@@ -33,7 +34,6 @@ linters:
     - goconst     # Ищи повторяющиеся строки
     - gocritic    # Куча мелких полезных проверок
     - gocyclo     # Сложность кода
-    - gofmt       # Форматирование
     - goimports   # Автоматический импорт пакетов
     - goprintffuncname # Правильное именование printf-подобных функций
     - gosec       # Проверка на базовые уязвимости безопасности
